@@ -1,96 +1,81 @@
 # Carlo De Maria
 
-<div align="center">
-
-**Aerospace Engineering Undergraduate** · *Università degli Studi di Napoli Federico II*  
-Focus: **Space Propulsion** | **Compressible Aerodynamics** | **3D CAD/CAE** | **Scientific Computing**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/carlodemaria)
-[![Email](https://img.shields.io/badge/Email-carlodemaria.2005%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:carlodemaria.2005@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-carlodemaria-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/carlodemaria)
-
-<sub>[🇮🇹 Leggi in Italiano](README_IT.md)</sub>
+**Ingegneria Aerospaziale | Propulsione, Gasdinamica & Progettazione Meccanica CAD**  
+*Università degli Studi di Napoli Federico II*
 
 ---
 
-</div>
+## Chi sono
 
-### About Me
+Studente al 3° anno del corso di Laurea in Ingegneria Aerospaziale presso l'Università degli Studi di Napoli Federico II.
 
-Third-year **Aerospace Engineering** undergraduate at *Università degli Studi di Napoli Federico II* with an analytical, physics-driven background in thermofluid dynamics, space propulsion, and mechanical design.
-
-My technical focus bridges **aerospace theoretical modeling** (quasi-1D compressible gas dynamics, rocket engine cycle analysis, supersonic aerodynamics) and **computational/applied engineering** (scientific Python development with PyQt/NumPy, parametric 3D CAD modeling, and FEA structural validation).
-
-* **Current Studies:** B.Sc. in Aerospace Engineering (Year 3), Federico II, Naples
-* **Technical Interests:** Liquid & solid rocket propulsion, nozzle expansion physics, shock-wave dynamics, parametric mechanical design, and simulation tooling.
+* **Certificazioni Linguistiche:** Certificazione di lingua inglese livello B2.
+* **Obiettivo Professionale:** Specializzarmi nell'ambito della **Propulsione Aerospaziale** (sia aeronautica che spaziale), combinando l'analisi gasdinamica e termodinamica dei sistemi propulsivi con la progettazione meccanica 3D e lo sviluppo di strumenti di simulazione numerica.
 
 ---
 
-### Featured Projects
+## Progetti Principali
 
-#### 1. [GasPropLab — Compressible Flow & Propulsion Simulation Suite](https://github.com/carlodemaria/GasPropLab)
-> *Desktop computational suite for quasi-1D compressible gas dynamics and rocket engine performance estimation.*
+### GasPropLab
+*Applicazione desktop per l'analisi quasi-1D di flussi comprimibili e la stima delle prestazioni di cicli propulsivi.*
 
-* **Core Physics Solvers:**
-  * **Isentropic & Nozzle Flows:** Converging-diverging (De Laval) nozzle simulation across subsonic, sonic, and supersonic regimes; choked flow conditions, design vs. off-design nozzle states (under-expanded, over-expanded with shock separation).
-  * **Shock Dynamics:** Analytical solutions for normal shocks and oblique shock-expansion wave interactions.
-  * **1D Generalized Flows:** Implementation of Fanno flow (friction-dominated) and Rayleigh flow (heat addition/rejection) relations.
-  * **Rocket Propulsion Performance:** Engine parameter computation including thrust ($F$), specific impulse ($I_{sp}$), characteristic velocity ($c^*$), thrust coefficient ($C_F$), and expansion ratio sizing.
-* **Architecture & Stack:** Fully written in Python leveraging **NumPy** and **SciPy** vectorization for mathematical rigor, paired with a modern GUI built on **PyQt6** and high-rate 2D plotting via **PyQtGraph** and **Matplotlib**.
+* **Stack & Tecnologie:** Python, PyQt6, NumPy, SciPy, Matplotlib, PyQtGraph.
+* **Funzionalità & Modelli Fisici:**
+  * Simulazione quasi-1D del flusso comprimibile in condotti a sezione variabile e ugelli di De Laval in regimi subsonico, sonico e supersonico (condizioni di efflusso adattato, sottoespanso e sovraespanso con distacco).
+  * Risoluzione analitica di discontinuità: onde d'urto normali, onde d'urto oblique e ventagli di espansione di Prandtl-Meyer.
+  * Modellazione di flussi unidimensionali con effetti dissipativi: flussi adiabatici con attrito (linee di Fanno) e flussi con scambio termico (linee di Rayleigh).
+  * Calcolo termodinamico e analisi delle prestazioni di cicli propulsivi (spinta, impulso specifico $I_{sp}$, consumi specifici e parametri di rendimento).
+  * Interfaccia grafica (GUI) interattiva per la visualizzazione dinamica in tempo reale dei profili di pressione, temperatura e numero di Mach.
 
-```
-Python  |  PyQt6  |  NumPy  |  SciPy  |  PyQtGraph  |  Matplotlib
-```
+### Assieme Turbina (CAD 3D)
+*Progettazione e modellazione parametrica 3D completa di un gruppo turbina/turbocompressore.*
 
----
-
-#### 2. [Thrust Vector Control (TVC) Nozzle Assembly](https://github.com/carlodemaria/tvc-nozzle-assembly)
-> *Parametric 3D CAD design, ISO technical drafting, and FEA structural analysis of a 2-DOF gimbaled rocket nozzle mechanism.*
-
-* **Mechanical Design:**
-  * Full parametric assembly in **Autodesk Inventor Professional**, featuring a two-axis gimbal ring structure, bearing mounts, actuator pushrod linkages, and converging-diverging nozzle contour.
-  * Kinematic clearance assessment for continuous $\pm 6^\circ$ thrust vectoring deflection without interference.
-* **Manufacturing & Tolerances:**
-  * Complete 2D engineering drawings (messa in tavola) compliant with ISO/ASME standard tolerances, fits, and surface finish specifications.
-* **Structural Verification (FEM):**
-  * Finite Element Analysis (FEA) under critical operating regimes: maximum chamber pressure load, gimbal actuator torque reaction, and asymmetric pressure distribution during transient separation.
-  * Evaluated Von Mises stress distributions, deformation fields, and structural safety factors.
-
-```
-Autodesk Inventor Professional  |  FEA / FEM  |  GD&T  |  AutoCAD
-```
+* **Ambiente di Sviluppo:** Autodesk Inventor Professional.
+* **Ambiti di Applicazione & Competenze:**
+  * Modellazione solida parametrica di tutti i componenti del gruppo turbomacchina (girante palettata, albero di trasmissione, statore, volute e carter esterno).
+  * Gestione avanzata degli assiemi, definizione dei vincoli cinematici di moto e verifica delle interferenze geometriche.
+  * Realizzazione della documentazione tecnica esecutiva e messa in tavola 2D normalizzata (viste principali, sezioni, dettagli costruttivi, tolleranze dimensionali/geometriche e distinta base/BOM).
 
 ---
 
-### Technical Skills & Engineering Tools
+## Formazione Tecnica & Competenze
 
-| Domain | Tools & Technologies |
-| :--- | :--- |
-| **Scientific Computing & Programming** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyQt6](https://img.shields.io/badge/PyQt6-41CD52?style=flat-square&logo=qt&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square) ![PyQtGraph](https://img.shields.io/badge/PyQtGraph-2D3748?style=flat-square) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) |
-| **CAD & Structural Modeling (CAE)** | ![Autodesk Inventor](https://img.shields.io/badge/Autodesk%20Inventor%20Pro-Master%20100h-E51A24?style=flat-square&logo=autodesk&logoColor=white) ![AutoCAD](https://img.shields.io/badge/AutoCAD-E51A24?style=flat-square&logo=autodesk&logoColor=white) ![FEM / FEA Analysis](https://img.shields.io/badge/CAE-FEA%20%2F%20FEM%20Structural-1E293B?style=flat-square) |
-| **Aerospace Engineering Core** | Compressible Gas Dynamics · Rocket & Airbreathing Propulsion · Aerodynamics · Thermofluid Dynamics · Flight Mechanics |
+### CAD & Progettazione Meccanica
+![Autodesk Inventor](https://img.shields.io/badge/Autodesk%20Inventor-E23B2A?style=flat-square&logo=autodesk&logoColor=white)
+![AutoCAD](https://img.shields.io/badge/AutoCAD-E51010?style=flat-square&logo=autodesk&logoColor=white)
+
+* **Master di Specializzazione (~100 ore):** Percorso completato presso **Click Academy** su Autodesk Inventor Professional e AutoCAD per la progettazione meccanica 3D, modellazione parametrica avanzata e disegno tecnico esecutivo.
+
+### Programmazione & Simulazione Numerica
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyQt6](https://img.shields.io/badge/PyQt6-41CD52?style=flat-square&logo=qt&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)
+![PyQtGraph](https://img.shields.io/badge/PyQtGraph-2D3748?style=flat-square)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
+* Sviluppo di algoritmi per l'analisi numerica, manipolazione matriciale di dati e interfacce grafiche desktop reattive per il post-processing ingegneristico.
+* Controllo di versione distribuito e gestione repository con Git e GitHub.
+
+### Fondamenti Ingegneristici
+* **Propulsione Aerospaziale:** Cicli termodinamici per propulsione aeronautica e spaziale (turbogetti, turbofan, endoreattori a propellente chimico), parametri propulsivi e stima delle prestazioni.
+* **Gasdinamica & Termofluidodinamica:** Equazioni di conservazione integrali e differenziali, flussi comprimibili monodimensionali, relazioni di salto di Rankine-Hugoniot, scambi termici e perdite di carico.
+* **Aerodinamica:** Aerodinamica teorica e applicata, profili alari, effetti di comprimibilità e regimi supersonici.
+* **Disegno Tecnico Industriale:** Normative ISO/UNI, quotatura funzionale, tolleranze dimensionali e geometriche (GD&T), finiture superficiali e accoppiamenti meccanici.
 
 ---
 
-### GitHub Activity & Statistics
+## GitHub Stats
 
-<div align="center">
-  <a href="https://github.com/carlodemaria">
-    <img height="155" src="https://github-readme-stats.vercel.app/api?username=carlodemaria&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Carlo's GitHub Stats" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/carlodemaria">
-    <img height="155" src="https://github-readme-stats.vercel.app/api/top-langs/?username=carlodemaria&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-  </a>
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=carlodemaria&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats di Carlo De Maria" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=carlodemaria&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="155" />
+</p>
 
 ---
 
-### Contact & Profiles
-
-Feel free to reach out for research collaborations, aerospace student team initiatives, or technical opportunities:
+## Contatti
 
 * **Email:** [carlodemaria.2005@gmail.com](mailto:carlodemaria.2005@gmail.com)
-* **LinkedIn:** [linkedin.com/in/carlodemaria](https://linkedin.com/in/carlodemaria) *(replace with your vanity URL)*
-* **Location:** Naples, Italy
-
